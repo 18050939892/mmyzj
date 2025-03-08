@@ -153,16 +153,16 @@
             var timerone
             timerone = setInterval(function () {
                 if (parseFloat($(".main").css("background-position-x")) < -150) {
-                    $(".main").css("background-position-x", parseFloat($(".main").css("background-position-x")) + 20 + "px")
+                    $(".main").css("background-position-x", parseFloat($(".main").css("background-position-x")) + 6 + "px")
                     if (parseFloat($(".main").css("background-position-y")) > 250) {
-                        $(".main").css("background-position-y", parseFloat($(".main").css("background-position-y")) - 10 + "px")
+                        $(".main").css("background-position-y", parseFloat($(".main").css("background-position-y")) - 3 + "px")
                     } else {
                         clearTimeout(timertwo)
                     }
                 } else {
                     clearTimeout(timerone)
                 }
-            }, 30)
+            }, 10)
 
             var height = document.documentElement ? document.documentElement.clientHeight : document.body.clientHeight
             $(".main").css({
